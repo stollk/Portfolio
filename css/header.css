@@ -1,0 +1,104 @@
+nav{
+    background-color:white;
+    text-align: left;
+    width:100%;
+    z-index: 999;
+    border-bottom: 1px solid #EBEBEB;
+}
+.nav-still{
+  background: none;
+  width:70%;
+  margin: 0 auto;
+}
+.nav-still ul li a{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+    display: block;
+    /* color:#498cb2; */
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 300;
+}
+li a:hover{
+  color:#AEBFDE;
+  font-weight: bold;
+}
+.divider{
+  padding-right: 20px;
+}
+li a:nth-child(1){
+  padding-left: 0px;
+}
+/* li a:hover{
+    color: pink;
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 12s;
+    animation-name: example;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+} */
+
+/* Safari 4.0 - 8.0 */
+/* @-webkit-keyframes example {
+    0%      {color:pink;}
+    16.67%  {color:orange;}
+    33.34%  {color:green;}
+    50.01%  {color:blue;}
+    66.68%  {color:purple;}
+    100%    {color:pink;}
+} */
+
+/* Standard syntax */
+/* @keyframes example {
+  0%      {color:pink;}
+  16.67%  {color:orange;}
+  33.34%  {color:green;}
+  50.01%  {color:blue;}
+  66.68%  {color:purple;}
+  100%    {color:pink;}
+} */
+
+
+.active {
+    background-color:;
+}
+.scroll-top-btn{
+  z-index: 3;
+  position: fixed;
+  bottom: 0px;
+  background: #498cb2;
+  color: white;
+  font-size: 30px;
+  border-radius: 100%;
+  border: 1px solid white;
+  padding: 3px 14px 7px 14px;
+  opacity: .85;
+  right: 10px;
+}
+.scroll-top-btn:hover{
+  background: #e24444;
+  color:white;
+  border: 1px solid white;
+}
+.fa-chevron-up{
+
+}

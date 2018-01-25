@@ -1,0 +1,346 @@
+/* Global Classes */
+.position-front{
+  position: absolute;
+  z-index: 3;
+}
+.position-back{
+  position: relative;
+}
+.center{
+  text-align: center;
+  margin: 0 auto;
+}
+.spacer-right{
+  padding-right:30px;
+}
+.spacer-left{
+  padding-left:30px;
+}
+/* Global Classes End */
+/* Fonts */
+button{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 300;
+}
+h1{
+
+}
+h3{
+
+}
+ h2{
+
+}
+h4{
+
+}
+h5{
+
+}
+h6{
+  font-size: 16px;
+}
+p{
+
+}
+.section {
+    padding-top:60px;/*offsets fixed Nav, which is about 60px in height, so nav doesn't cover top of section when uses the nav links to scroll to each section*/
+}
+#home{
+  padding-top: 0;
+}
+.spacer{
+  margin: 10% 0% 10% 0%;
+}
+.portfolio-grid {
+    background: #AEBFDE;
+    margin-bottom: 2%;
+    height:300px;
+    line-height: 300px;
+    text-align: center;
+}
+.portfolio-logo{
+  color: white;
+  font-family: Arial;
+  font-size: 60px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+.right{
+  float:right;
+  text-align:right;
+}
+.left{
+  float:left;
+  text-align:left;
+}
+/* #portfolio-grid-cpc{
+  background: #4d85c5;
+}
+#portfolio-grid-cpc img{
+  width: 50%;
+}
+#portfolio-grid-wiki{
+  background: black;
+}
+#portfolio-grid-timeline{
+  background:#FCA06F;
+  font-family: 'Aldrich', sans-serif;
+}
+#portfolio-logo-timeline{
+  font-family: 'Aldrich', sans-serif;
+} */
+.fa-globe{
+  padding-right: 20px;
+}
+/*  ------------------------------------------- Home Section ---------------------------------------  */
+.box{
+  background: #AEBFDE;
+  height: 70vh;
+  width: 69vw;
+  margin: 0 auto;
+}
+#home-text{
+  bottom: 7%;
+  left: 7%;
+}
+#home-text h1{
+    line-height: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-transform: none;
+    color: white;
+}
+/* ------ Typing Animation ------ */
+#home-text h1 {
+  border-right: .15em solid white;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#home-text h1:nth-child(1) {
+  width: 7.2em;
+  -webkit-animation: type 2s steps(40, end);
+  animation: type 2s steps(40, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+#home-text h1:nth-child(2) {
+  width: 100%;
+  opacity: 0;
+  -webkit-animation: type2 4s steps(60, end);
+  animation: type2 4s steps(60, end);
+  -webkit-animation-delay:2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid white;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid white;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid white;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid white;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
+/* Text Wavy Underline Hover effect */
+#specialText-Work{
+  width: 2.5em;
+}
+#specialText-About{
+  width: 2.8em;
+}
+.specialText {
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 1em;
+  margin-left:0px;
+  padding-left: 0px;
+  overflow: hidden;
+}
+.specialText:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  white-space: nowrap;
+  content: attr(data-text) attr(data-text);
+  color: transparent;
+  line-height: 1.8;
+  text-decoration: underline;
+  -webkit-text-decoration-style: wavy;
+          text-decoration-style: wavy;
+  -webkit-text-decoration-color: #AEBFDE;
+          text-decoration-color: #AEBFDE;
+  -webkit-animation: wavy-slide 2s linear infinite;
+          animation: wavy-slide 2s linear infinite;
+}
+.specialText:hover:after {
+
+}
+
+@-webkit-keyframes wavy-slide {
+  to {
+    margin-left: -51%;
+  }
+}
+
+@keyframes wavy-slide {
+  to {
+    margin-left: -51%;
+  }
+}
+
+.specialText2 {
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 1em;
+  margin-left:0px;
+  padding-left: 0px;
+  overflow: hidden;
+}
+.specialText2:hover:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  white-space: nowrap;
+  content: attr(data-text) attr(data-text);
+  color: transparent;
+  line-height: 1.8;
+  text-decoration: underline;
+  -webkit-text-decoration-style: wavy;
+          text-decoration-style: wavy;
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
+  -webkit-animation: wavy-slide 3s linear infinite;
+          animation: wavy-slide 3s linear infinite;
+}
+
+@-webkit-keyframes wavy-slide {
+  to {
+    margin-left: -51%;
+  }
+}
+
+@keyframes wavy-slide {
+  to {
+    margin-left: -51%;
+  }
+}
+/*  ------------------------------------------- Work Section ---------------------------------------  */
+#work{
+  margin: 0% 6% 0% 6%;
+}
+/*  ------------------------------------------- About Section ---------------------------------------  */
+#about{
+  margin: 0% 6% 0% 6%;
+  padding-bottom: 150px;
+}
+.speech-bubble{
+  position: relative;
+  padding: 40px;
+  background: #FFFFFF;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  border: black solid 1px;
+}
+
+.speech-bubble:after{
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 15px 13px 0;
+  border-color: #FFFFFF transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  bottom: -15px;
+  left: 224px;
+}
+
+.speech-bubble:before{
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 15px 13px 0;
+  border-color: black transparent;
+  display: block;
+  width: 0;
+  z-index: 0;
+  bottom: -16px;
+  left: 224px;
+}
+.contact-links{
+  color:black;
+  text-decoration: none;
+}
+.contact-links h6:hover{
+  color:#AEBFDE;
+  font-weight: bold;
+  font-size:18px;
+  text-decoration: none;
+}

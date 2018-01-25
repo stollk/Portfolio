@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Kaitlyn Stolley | Web Designer & Developer</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Abel|Archivo+Black|Hind|Josefin+Sans|Oswald|Rubik+Mono+One" rel="stylesheet">
+
+  <!-- Icons
+  -------------------------------------------------- -->
+  <link href="resources/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon-01.png">
+
+  <!-- JQuery and JQuery UI
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="stylesheet" href="resources/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="resources/jquery/jquery.min.js"><\/script>')</script>
+<script src="resources/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+
+<!-- Handlebars
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script type="text/javascript" src="resources/handlebars/handlebars-v4.0.11.js"></script>
+
+</head>
+<body>
+  <div id="content"></div>
+  <script id="entry-template" type="text/x-handlebars-template">
+    <div class="entry">
+      <h1>{{title}}</h1>
+      <div class="body">
+        {{body}}
+      </div>
+    </div>
+  </script>
+  <script type="text/javascript">
+
+    var source   = document.getElementById("entry-template").innerHTML;
+    var template = Handlebars.compile(source);
+
+    var one = {
+      "body":["All the info about CPC work."],
+      "title":["CPC"]
+    };
+    var two = {
+      "body":["All the info about WikiMap work."],
+      "title":["WikiMap"]
+    };
+    var three = {
+      "body":["All the info about Internet Timeline work."],
+      "title":["Internet Timeline"]
+    };
+    var number = localStorage.getItem("btn_number");
+    console.log(number);
+
+    if(number == 0){
+      $("#content").html(template(one));
+    }else if(number == 1){
+      $("#content").html(template(two));
+    }else{
+      $("#content").html(template(three));
+    };
+
+  </script>
+</body>
+</html>
