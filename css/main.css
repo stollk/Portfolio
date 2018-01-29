@@ -105,7 +105,7 @@ p{
   bottom: 7%;
   left: 7%;
 }
-#home-text h1{
+.header-text h1{
     line-height: 40px;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
@@ -292,6 +292,25 @@ p{
 }
 /*  ------------------------------------------- Work Section ---------------------------------------  */
 #work{
+  margin: 0% 6% 0% 6%;
+}
+/*  ------------------------------------------- Portfolio Page ---------------------------------------  */
+.box-portfolio-page{
+  background: #AEBFDE;
+  height: 30vh;
+  width: 70vw;
+  margin: 0 auto;
+  margin-top:20px;
+}
+#portfolio-page-text{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#portfolio-page-text h1{
+  line-height: 60px;
+}
+#portfolio-page-margins{
   margin: 0% 6% 0% 6%;
 }
 /*  ------------------------------------------- About Section ---------------------------------------  */

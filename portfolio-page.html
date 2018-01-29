@@ -43,44 +43,86 @@
 <script type="text/javascript" src="resources/handlebars/handlebars-v4.0.11.js"></script>
 
 </head>
-<body>
-  <div id="content"></div>
-  <script id="entry-template" type="text/x-handlebars-template">
-    <div class="entry">
-      <h1>{{title}}</h1>
-      <div class="body">
-        {{body}}
+<body id="home">
+
+  <!-- Primary Home Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <nav class="nav-still">
+      <div class="" style="">
+        <ul>
+          <li><a class="nav-logo" href="index.html">Kaitlyn Stolley</a></li><span class="divider">|</span>
+          <!-- <li><a class="" href="">&#060; Internet Timeline</a></li>
+          <li><a class="" href="">WikiMap &#062;</a></li> -->
+          <!-- <li><a class="" href="index.html/#work">work</a></li>
+          <li><a href="index.html/#about">about</a></li> -->
+          <!-- <li><a href="#section-03">contact</a></li> -->
+        </ul>
       </div>
-    </div>
-  </script>
-  <script type="text/javascript">
+    </nav>
+  <div class="container">
+    <div id="content"></div>
+  </div>
 
-    var source   = document.getElementById("entry-template").innerHTML;
-    var template = Handlebars.compile(source);
+    <script id="entry-template" type="text/x-handlebars-template">
+      <div class="entry">
+        <div class="box-portfolio-page position-back">
+          <div class="row position-front header-text" id="portfolio-page-text">
+            <h1 class="" data-text=".......................................................">{{title}}</h1>
+          </div>
+        </div>
+        <div class="body" id="portfolio-page-margins"><br><br><br><br>
+          <div class="row">
+            <div class="one-half column spacer-right">
+              <h5>Project</h5>
+              <p>
+                {{body}}
+              </p>
+              <a target="_blank" href="{{url}}">Launch Website</a>
+            </div>
+            <div class="one-half column spacer-left">
+              <h5>Tools & Languages</h5>
+              <p>
+                {{tools}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </script>
+    <script type="text/javascript">
 
-    var one = {
-      "body":["All the info about CPC work."],
-      "title":["CPC"]
-    };
-    var two = {
-      "body":["All the info about WikiMap work."],
-      "title":["WikiMap"]
-    };
-    var three = {
-      "body":["All the info about Internet Timeline work."],
-      "title":["Internet Timeline"]
-    };
-    var number = localStorage.getItem("btn_number");
-    console.log(number);
+        var source   = document.getElementById("entry-template").innerHTML;
+        var template = Handlebars.compile(source);
 
-    if(number == 0){
-      $("#content").html(template(one));
-    }else if(number == 1){
-      $("#content").html(template(two));
-    }else{
-      $("#content").html(template(three));
-    };
+        var one = {
+          "body":["This website was created for a local church using WordPress. The goal of this project was to create a new website that was user friendly and easy to maintain."],
+          "title":["Covenant Presbyterian Church"],
+          "tools":["WordPress, HTML, CSS, MailChimp"],
+          "url":["http://cpcoviedo.com/"]
+        };
+        var two = {
+          "body":["WikiMap is an API mashup using the Google Maps API and the MediaWiki API. WikiMap allows you to browse wikipedia articles based on location."],
+          "title":["WikiMap"],
+          "tools":["Google Maps API, MediaWiki API, HTML, CSS, jQuery, AJAX, JSON Bootstrap"],
+          "url":["https://stollk.github.io/"]
+        };
+        var three = {
+          "body":["Internet Timeline is a project that aims to inform and educate users about the origins and development of the internet. The timeline makes use of information gathered through the creative commons."],
+          "title":["Internet Timeline"],
+          "tools":["HTML, CSS, jQuery, Gulp, Git"],
+          "url":["http://kaitlynstolley.com/portfolio/internettimeline/dist/"]
+        };
+        var number = localStorage.getItem("btn_number");
+        console.log(number);
 
-  </script>
+        if(number == 0){
+          $("#content").html(template(one));
+        }else if(number == 1){
+          $("#content").html(template(two));
+        }else{
+          $("#content").html(template(three));
+        };
+
+    </script>
 </body>
 </html>
