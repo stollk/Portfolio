@@ -16,6 +16,14 @@
 .spacer-left{
   padding-left:30px;
 }
+.right{
+  float:right;
+  text-align:right;
+}
+.left{
+  float:left;
+  text-align:left;
+}
 /* Global Classes End */
 /* Fonts */
 button{
@@ -67,14 +75,6 @@ p{
   vertical-align: middle;
   line-height: normal;
 }
-.right{
-  float:right;
-  text-align:right;
-}
-.left{
-  float:left;
-  text-align:left;
-}
 /* #portfolio-grid-cpc{
   background: #4d85c5;
 }
@@ -115,8 +115,8 @@ p{
 /* ------ Typing Animation ------ */
 #home-text h1 {
   border-right: .15em solid white;
-  white-space: nowrap;
   overflow: hidden;
+  white-space: nowrap;
 }
 #home-text h1:nth-child(1) {
   width: 7.2em;
@@ -313,6 +313,11 @@ p{
 #portfolio-page-margins{
   margin: 0% 6% 0% 6%;
 }
+.frame{
+  margin: 80px 0px;
+  background: #AEBFDE;
+  padding:5px;
+}
 /*  ------------------------------------------- About Section ---------------------------------------  */
 #about{
   margin: 0% 6% 0% 6%;
@@ -362,4 +367,53 @@ p{
   font-weight: bold;
   font-size:18px;
   text-decoration: none;
+}
+/* ----------------------------------------- Media Queries ----------------------------------------------------- */
+@media (min-device-width: 500px){
+  .mobile{
+    display:none;
+  }
+  .nav{
+    display:block;
+  }
+}
+
+@media (max-device-width: 499px){
+  .mobile{
+    display:block;
+    width: 90%;
+  }
+  .nav{
+    display:none;
+  }
+  .container{
+    margin: 0px;
+  }
+  .box{
+    height: 60vh;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .specialText2{
+    font-size: 36px;
+  }
+  #work{
+    margin: 0% 5%;
+  }
+  #about{
+    margin: 0% 5%;
+  }
+  .spacer{
+    margin: 5% 0% 5% 0%;
+  }
+  .section{
+    padding-top:20px;
+  }
+  .spacer-left{
+    padding-left: 0px;
+  }
+  .right{
+    float:left;
+    text-align:left;
+  }
 }
