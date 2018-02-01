@@ -377,7 +377,6 @@ p{
     display:block;
   }
 }
-
 @media (max-device-width: 499px){
   .mobile{
     display:block;
@@ -395,7 +394,7 @@ p{
     margin: 0 auto;
   }
   .specialText2{
-    font-size: 36px;
+    display: none;
   }
   #work{
     margin: 0% 5%;
@@ -417,10 +416,13 @@ p{
     text-align:left;
   }
   body{
-    overflow:hidden;
+    overflow-x:hidden;
     width:100%
   }
   .fixed{
     padding-left: 5%;
+  }
+  .container {
+      width: 100%;
   }
 }
