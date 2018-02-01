@@ -3,17 +3,12 @@ jQuery(document).ready(function ($) {
 	$(window).scroll(function(){
 		var scrollTop = 1;
 		if($(window).scrollTop() >= scrollTop){
-			$('nav').css({
-				position : 'fixed',
-				top : '0',
-				width: '100%',
-				padding: '0% 0% 0% 15%'
-			});
+			$('nav').addClass('fixed');
 			$('nav').removeClass('nav-still');
 		}
 		if($(window).scrollTop() < scrollTop){
-			$('nav').removeAttr('style');
 			$('nav').addClass('nav-still');
+			$('nav').removeClass('fixed');
 		}
 	})
 

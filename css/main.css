@@ -416,4 +416,11 @@ p{
     float:left;
     text-align:left;
   }
+  body{
+    overflow:hidden;
+    width:100%
+  }
+  .fixed{
+    padding-left: 5%;
+  }
 }
