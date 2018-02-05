@@ -60,13 +60,6 @@ p{
 .spacer{
   margin: 10% 0% 10% 0%;
 }
-.portfolio-grid {
-    background: #AEBFDE;
-    margin-bottom: 2%;
-    height:300px;
-    line-height: 300px;
-    text-align: center;
-}
 .portfolio-logo{
   color: white;
   font-family: Arial;
@@ -293,6 +286,21 @@ p{
 /*  ------------------------------------------- Work Section ---------------------------------------  */
 #work{
   margin: 0% 6% 0% 6%;
+}
+.work-grid{
+    background: #AEBFDE;
+    margin-bottom: 2%;
+    width:auto;
+    line-height: 300px;
+}
+.work-title{
+  text-decoration: none;
+  color: white;
+  padding:80px;
+  text-align:left;
+}
+.portfolio_btn{
+  text-decoration: none;
 }
 /*  ------------------------------------------- Portfolio Page ---------------------------------------  */
 .box-portfolio-page{
