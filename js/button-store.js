@@ -6,4 +6,11 @@ $(function() {
     var number = localStorage.getItem("btn_number");
     console.log(number);
   });
+  $(".work-grid").hover(function(){
+    $('.work-img',this).removeClass("hide");
+    $('.work-img',this).addClass("show");
+  }, function(){
+    $('.work-img',this).addClass("hide");
+    $('.work-img',this).removeClass("show");
+  })
 });
