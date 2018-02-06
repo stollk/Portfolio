@@ -292,9 +292,9 @@ p{
     height:300px;
     overflow: hidden;
 }
-.expand{
-  height:350px;
-}
+.expand { transition: all .2s ease-in-out; }
+.expand:hover { transform: scale(1.06); }
+
 .hide{
   display:none;
 }

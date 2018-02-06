@@ -7,11 +7,11 @@ $(function() {
     console.log(number);
   });
   $('.work-grid').hover(function(){
-    $('.work-grid').addClass("expand");
+    // $('.work-grid').addClass("expand");
     $('.show-on-hover',this).removeClass("hide");
     $('.show-on-hover',this).addClass("show");
   }, function(){
-    $('.work-grid').removeClass("expand");
+    // $('.work-grid').removeClass("expand");
     $('.show-on-hover',this).addClass("hide");
     $('.show-on-hover',this).removeClass("show");
   })
