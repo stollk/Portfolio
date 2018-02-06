@@ -6,11 +6,13 @@ $(function() {
     var number = localStorage.getItem("btn_number");
     console.log(number);
   });
-  $(".work-grid").hover(function(){
-    $('.work-img',this).removeClass("hide");
-    $('.work-img',this).addClass("show");
+  $('.work-grid').hover(function(){
+    $('.work-grid').addClass("expand");
+    $('.show-on-hover',this).removeClass("hide");
+    $('.show-on-hover',this).addClass("show");
   }, function(){
-    $('.work-img',this).addClass("hide");
-    $('.work-img',this).removeClass("show");
+    $('.work-grid').removeClass("expand");
+    $('.show-on-hover',this).addClass("hide");
+    $('.show-on-hover',this).removeClass("show");
   })
 });

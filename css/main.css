@@ -292,6 +292,9 @@ p{
     height:300px;
     overflow: hidden;
 }
+.expand{
+  height:350px;
+}
 .hide{
   display:none;
 }
@@ -308,6 +311,13 @@ p{
 }
 .portfolio_btn{
   text-decoration: none;
+}
+.fa-arrow-right{
+  bottom:0%;
+  right:0%;
+  padding:80px;
+  color:white;
+  font-size: 40px;
 }
 /*  ------------------------------------------- Portfolio Page ---------------------------------------  */
 .box-portfolio-page{
