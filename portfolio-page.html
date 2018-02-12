@@ -3,44 +3,44 @@
 <head>
 
   <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+   -->
   <meta charset="utf-8">
   <title>Kaitlyn Stolley | Web Designer & Developer</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
   <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+   -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+   -->
   <link href="https://fonts.googleapis.com/css?family=Abel|Archivo+Black|Hind|Josefin+Sans|Oswald|Rubik+Mono+One" rel="stylesheet">
 
   <!-- Icons
-  -------------------------------------------------- -->
+   -->
   <link href="resources/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
   <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+   -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/main.css">
   <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+   -->
   <link rel="icon" type="image/png" href="images/favicon-01.png">
 
   <!-- JQuery and JQuery UI
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+   -->
 <link rel="stylesheet" href="resources/jquery-ui-1.12.1.custom/jquery-ui.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="resources/jquery/jquery.min.js"><\/script>')</script>
 <script src="resources/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
 
 <!-- Handlebars
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<script type="text/javascript" src="resources/handlebars/handlebars-v4.0.11.js"></script>
+ -->
+<script src="resources/handlebars/handlebars-v4.0.11.js"></script>
 
 </head>
 <body id="home">
@@ -50,7 +50,7 @@
     <nav class="nav-still back">
       <div class="" style="">
         <ul>
-          <li><a class="nav-logo" href="index.html">Back</a></li>
+          <li class=""><a class="back-btn" href="index.html#work">Back to Work</a></li>
           <!-- <li><a class="" href="">&#060; Internet Timeline</a></li>
           <li><a class="" href="">WikiMap &#062;</a></li> -->
           <!-- <li><a class="" href="index.html/#work">work</a></li>
@@ -87,12 +87,12 @@
             </div>
           </div>
           <!-- <div class="frame">
-            <img src="{{laptop}}" width="125%" height="auto">
+            <img src="" width="125%" height="auto">
           </div> -->
         </div>
       </div>
     </script>
-    <script type="text/javascript">
+    <script>
 
         var source   = document.getElementById("entry-template").innerHTML;
         var template = Handlebars.compile(source);
@@ -100,9 +100,8 @@
         var one = {
           "body":["This website was created for a local church using WordPress. The goal of this project was to create a new website that was user friendly and easy to maintain."],
           "title":["Covenant Presbyterian Church"],
-          "tools":["WordPress, HTML, CSS, MailChimp"],
+          "tools":["WordPress, HTML, CSS, Google Maps API, Google Calendar API, MailChimp"],
           "url":["http://cpcoviedo.com/"],
-          "laptop":["images/cpc_mockup.png"]
         };
         var two = {
           "body":["WikiMap is an API mashup using the Google Maps API and the MediaWiki API. WikiMap allows you to browse wikipedia articles based on location."],

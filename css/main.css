@@ -55,7 +55,7 @@ p{
 .section {
     padding-top:60px;/*offsets fixed Nav, which is about 60px in height, so nav doesn't cover top of section when uses the nav links to scroll to each section*/
 }
-#home{
+#home-section{
   padding-top: 0;
 }
 .spacer{
@@ -89,6 +89,18 @@ p{
   padding-right: 20px;
 }
 /*  ------------------------------------------- Home Section ---------------------------------------  */
+/* Cursor */
+.typed-cursor {
+  font-size: 3.5em;
+  color:white;
+}
+#typed{
+  font-size: 3.5em;
+  color:white;
+}
+#typed-strings{
+  display:none;
+}
 .box{
   background: #AEBFDE;
   height: 70vh;
@@ -96,8 +108,9 @@ p{
   margin: 0 auto;
 }
 #home-text{
-  bottom: 7%;
+  bottom: 10%;
   left: 7%;
+  right:7%;
 }
 /* ------ Typing Animation ------ */
 #home-text h1 {
@@ -295,6 +308,10 @@ p{
 .show{
   display:block;
 }
+.tile-img{
+  width:100%;
+  height:auto;
+}
 .work-title{
   text-decoration: none;
   color: white;
@@ -405,6 +422,9 @@ p{
     display:block;
     width: 90%;
   }
+  .fixed{
+    width:100%;
+  }
   .nav{
     display:none;
   }
@@ -459,12 +479,24 @@ p{
     text-decoration: none;
     color: white;
     text-align:left;
-    padding:20px;
-    top: 0%;
-    left:0%;
+    padding:0px;
+    top: 10%;
+    left: 7%;
   }
   .work-title h1{
     font-size: 28px;
+    margin-bottom: -2%;
+  }
+  .work-title h4{
+    font-size: 18px;
+    margin-left: 1%;
+    font-weight: 500;
+  }
+  .fa-arrow-right{
+    font-size: 28px;
+    bottom:15%;
+    right:10%;
+    padding:0px;
   }
   .box-portfolio-page{
     height: 20vh;
@@ -484,5 +516,18 @@ p{
   }
   .back{
     width:90%;
+  }
+  .tile-img{
+    height:100%;
+    width:auto;
+  }
+  /* Cursor */
+  .typed-cursor {
+    font-size: 2.5em;
+    color:white;
+  }
+  #typed{
+    font-size: 2.5em;
+    color:white;
   }
 }
