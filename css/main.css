@@ -31,7 +31,8 @@ button{
     font-weight: 300;
 }
 h1{
-
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
 }
 h3{
 
@@ -97,13 +98,6 @@ p{
 #home-text{
   bottom: 7%;
   left: 7%;
-}
-.header-text h1{
-    line-height: 40px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    text-transform: none;
-    color: white;
 }
 /* ------ Typing Animation ------ */
 #home-text h1 {
@@ -304,10 +298,10 @@ p{
 .work-title{
   text-decoration: none;
   color: white;
-  padding:80px;
   text-align:left;
-  top:0%;
-  left:0%;
+  top:20%;
+  left:10%;
+  right:10%
 }
 .portfolio_btn{
   text-decoration: none;
@@ -327,13 +321,17 @@ p{
   margin: 0 auto;
   margin-top:20px;
 }
+.header-text h1{
+    line-height: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-transform: none;
+    color: white;
+}
 #portfolio-page-text{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-#portfolio-page-text h1{
-  line-height: 60px;
 }
 #portfolio-page-margins{
   margin: 0% 6% 0% 6%;
@@ -427,8 +425,12 @@ p{
   #about{
     margin: 0% 5%;
   }
+  #portfolio-page-margins{
+    margin: 0% 5%;
+  }
   .spacer{
-    margin: 5% 0% 5% 0%;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
   .section{
     padding-top:20px;
@@ -449,5 +451,38 @@ p{
   }
   .container {
       width: 100%;
+  }
+  .work-grid{
+      height:160px;
+  }
+  .work-title{
+    text-decoration: none;
+    color: white;
+    text-align:left;
+    padding:20px;
+    top: 0%;
+    left:0%;
+  }
+  .work-title h1{
+    font-size: 28px;
+  }
+  .box-portfolio-page{
+    height: 20vh;
+    width: 90%;
+    margin: 0 auto;
+    margin-top:20px;
+  }
+  .header-text h1{
+    font-size: 28px;
+    line-height:normal;
+  }
+  #portfolio-page-text{
+    top: 50%;
+    left: 10%;
+    transform: none;
+    transform: translate(0%,-50%);
+  }
+  .back{
+    width:90%;
   }
 }
