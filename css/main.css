@@ -32,7 +32,7 @@ button{
 }
 h1{
   font-family: 'Roboto', sans-serif;
-  font-weight: 900;
+  font-weight: bold;
 }
 h3{
 
@@ -140,97 +140,6 @@ p{
   top: 55%;
   left: 7%;
   right:7%;
-}
-/* ------ Typing Animation ------ */
-#home-text h1 {
-  border-right: .15em solid white;
-  overflow: hidden;
-  white-space: nowrap;
-}
-#home-text h1:nth-child(1) {
-  width: 7.2em;
-  -webkit-animation: type 2s steps(40, end);
-  animation: type 2s steps(40, end);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-
-#home-text h1:nth-child(2) {
-  width: 100%;
-  opacity: 0;
-  -webkit-animation: type2 4s steps(60, end);
-  animation: type2 4s steps(60, end);
-  -webkit-animation-delay:2s;
-  animation-delay: 2s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-
-@keyframes type {
-  0% {
-    width: 0;
-  }
-  99.9% {
-    border-right: .15em solid white;
-  }
-  100% {
-    border: none;
-  }
-}
-
-@-webkit-keyframes type {
-  0% {
-    width: 0;
-  }
-  99.9% {
-    border-right: .15em solid white;
-  }
-  100% {
-    border: none;
-  }
-}
-
-@keyframes type2 {
-  0% {
-    width: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  99.9% {
-    border-right: .15em solid white;
-  }
-  100% {
-    opacity: 1;
-    border: none;
-  }
-}
-
-@-webkit-keyframes type2 {
-  0% {
-    width: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  99.9% {
-    border-right: .15em solid white;
-  }
-  100% {
-    opacity: 1;
-    border: none;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-@-webkit-keyframes blink {
-  50% {
-    border-color: tranparent;
-  }
 }
 /* Text Wavy Underline Hover effect */
 #specialText-Work{
@@ -445,6 +354,9 @@ p{
   .nav{
     display:block;
   }
+  #about .breakpoint{
+    display:none;
+  }
 }
 @media (max-device-width: 499px){
   .mobile{
@@ -559,8 +471,8 @@ p{
     font-weight:bold;
   }
   #home-text{
-    top:auto;
-    bottom:15%;
+    top:5%;
+    bottom:5%%;
     left:10%;
     right:5%;
   }
