@@ -50,7 +50,8 @@ h6{
   font-size: 16px;
 }
 p{
-
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
 }
 .section {
     padding-top:60px;/*offsets fixed Nav, which is about 60px in height, so nav doesn't cover top of section when uses the nav links to scroll to each section*/
@@ -94,11 +95,37 @@ p{
   font-size: 3.5em;
   color:white;
   font-weight: bold;
+  -webkit-animation: blinker 1s infinite;
+          animation: blinker 1s infinite;
 }
+
+@-webkit-keyframes blinker {
+  50% {
+      opacity: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  }
+  100% {
+      opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+  }
+}
+
+@keyframes blinker {
+  50% {
+      opacity: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  }
+  100% {
+      opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+  }
+}
+
 #typed{
   font-size: 3.5em;
   color:white;
   font-weight: bold;
+  line-height: 1.5em;
 }
 #typed-strings{
   display:none;
@@ -110,7 +137,7 @@ p{
   margin: 0 auto;
 }
 #home-text{
-  bottom: 10%;
+  top: 55%;
   left: 7%;
   right:7%;
 }
@@ -438,9 +465,6 @@ p{
     width: 90%;
     margin: 0 auto;
   }
-  .specialText2{
-    display: none;
-  }
   #work{
     margin: 0% 5%;
   }
@@ -525,13 +549,30 @@ p{
   }
   /* Cursor */
   .typed-cursor {
-    font-size: 2em;
+    font-size: 2.5em;
     color:white;
     font-weight: bold;
   }
   #typed{
-    font-size: 2em;
+    font-size: 2.5em;
     color:white;
     font-weight:bold;
+  }
+  #home-text{
+    top:auto;
+    bottom:15%;
+    left:10%;
+    right:5%;
+  }
+  #about .left{
+    text-align: left;
+    float:none;
+  }
+  #about .right{
+    text-align: left;
+    float:none;
+  }
+  .grad-date{
+    display:none;
   }
 }
