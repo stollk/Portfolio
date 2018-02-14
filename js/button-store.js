@@ -15,7 +15,6 @@ $(function() {
     $('.show-on-hover',this).addClass("hide");
     $('.show-on-hover',this).removeClass("show");
   })
-
   // function close(element){
   //   $(element).attr('href', function() {
   //       return this.href + '#work';
